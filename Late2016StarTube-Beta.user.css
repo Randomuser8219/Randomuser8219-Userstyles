@@ -1,7 +1,7 @@
  /* ==UserStyle==
 @name           2016 Tweaks for V3 + StarTube
 @namespace      github.com/ArbestRi02/
-@version        1.1.10
+@version        1.1.11
 @description    Tweaks StarTube's 2016 style to be more accurate.
 @author         ArbestRi
 @preprocessor   less
@@ -40,7 +40,7 @@
         display: none !important }
 
     .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribed-unbranded, .yt-uix-button-subscribe-unbranded[disabled]:focus {
-        border: 1px solid #ccc; background-color: #f8f8f8; color: #333; font-size: 11px !important; }
+        border: 1px solid #ccc; background-color: #f8f8f8; font-size: 11px !important; }
 
     .profileLink, .action-panel-content:hover a, .pl-video-detail-container .pl-video-owner a:hover, .pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a, .distiller_yt-post_comment_section .link_action .link_action_text, .distiller_yt-thread .sentiment .count, .distiller_yt-thread .sentiment .count_active, .distiller_yt-thread_user-content .run-link, .feed-header .metadata a:hover, .yt-uix-button-link, #footer-links-primary a:hover, #footer-links-secondary a:hover, .filter:hover, .yt-lockup-mini .yt-lockup-title:hover, [exp-modern-styles] #watch-discussion .distiller_yt_instance .count, .actionable #watch-like:active .yt-uix-button-content, .actionable #watch-like.yt-uix-button-toggled .yt-uix-button-content{
         color: #167ac6 !important; }
@@ -269,7 +269,7 @@ opacity:1}
     line-height: 0px}
 /* fix playlist bar being a bit screwed */
 [exp-modern-playlists] .cardified-page .watch7-playlist-bar-right {
-    max-width: 413px !important;}
+    max-width: 403px !important;}
 
 .creator-bar-item .yt-uix-button-icon-audio {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-creatoreditor-vflso5Vx1.png) 0 -146px }
@@ -392,7 +392,11 @@ body #footer-container {
     margin: unset;}
     
 .feed-item-container .feed-author-bubble {
-    margin-left: 8px;}}
+    margin-left: 8px;}
+
+.yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success {
+    border-color: #3a78ab;}
+}
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
         display:none}    
