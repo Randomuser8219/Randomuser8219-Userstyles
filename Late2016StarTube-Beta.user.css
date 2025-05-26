@@ -120,6 +120,9 @@
     /* makes playlist pager at least not look so ugly */
     .pl-video-list .playlist-pager {
     margin-left: 10px;}
+ 
+   .pl-header-content .pl-privacy-icon {
+    margin-top: 8px;}
     
     .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded, .exp-new-subscribe-style .yt-uix-button-subscribed-unbranded {
         padding: 0 5.5px; box-shadow: unset; }
@@ -254,13 +257,13 @@ opacity:1}
     background: #525252;}
 /* index is in the center so it doesn't overlap the channel name */    
 #watch7-playlist-index-and-length {
-    padding: unset;position: absolute;top: 45.5px;left: 170px;color: #b8b8b8;}
+    padding: unset;position: absolute;top: 45.5px;left: 177px;color: #b8b8b8;}
     
 #watch7-playlist-index-and-length:after {
     content:" videos";cursor:text}
     
 [exp-modern-playlists] .watch7-playlist-bar-left .title:after {
-    content: "";position: absolute;display: block;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -327px -146px;width: 24px;height: 24px;right: 19px;top: 15px;}
+    content: "";position: absolute;display: block;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -327px -146px;width: 24px;height: 24px;right: 19px;top: 15px;cursor: pointer;}
     
 #watch7-playlist-tray .video-list-item a {
     padding: 7px 7px 0;}
@@ -303,7 +306,7 @@ opacity:1}
     & when (@FooterLogo = Ringo2) {
     content: "LIBRARY";color: #ff0033;font-size: 11px;margin: 0 5px;font-weight:500;}}
 
-[exp-modern-guide] #FEsubscriptions-guide-item .guide-my-subscriptions-icon {
+[exp-modern-guide] #FEsubscriptions-guide-item .guide-my-subscriptions-icon, [exp-modern-guide] #FEsubscriptions-guide-item .guide-my-subscriptions-icon:hover {
     background-position: -52px -321px;}
 
 .yt-lockup .yt-lockup-meta b {
@@ -396,6 +399,9 @@ body #footer-container {
 
 .yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success {
     border-color: #3a78ab;}
+
+.network-icon-youtube {
+    background: no-repeat url(https://raw.githubusercontent.com/Randomuser8219/Randomuser8219-Userstyles/refs/heads/main/2016favicon16x16.png);}
 }
 @-moz-document url("https://www.youtube.com/feed/trending") {
     .branded-page-v2-top-row, .feed-author-bubble-container, .feed-item-main .feed-item-header, .exp-top-guide .branded-page-v2-has-top-row .branded-page-v2-secondary-col {
