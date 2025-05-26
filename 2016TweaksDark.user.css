@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Dark Mode for 2016 StarTube Tweaks
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.4
 @description    Dark mode for 2016 Tweaks for StarTube
 @author         Me
 ==/UserStyle== */
@@ -27,13 +27,13 @@
 #footer-links-primary a, .watch-extras-section .content {
     color: #939393;
 }
-.yt-uix-button-icon-c4-grid-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow, .yt-uix-button-icon-c4-list-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow, .yt-uix-button-icon-play-all, .watch8-menuitem::before, #watch8-close .watch8-action-panel-dismiss, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .st-gear span, .pl-header .yt-uix-button-icon-gear, .pl-header .yt-uix-button-icon-playlist-share {
+.yt-uix-button-icon-c4-grid-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow, .yt-uix-button-icon-c4-list-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow, .yt-uix-button-icon-play-all, .watch8-menuitem::before, #watch8-close .watch8-action-panel-dismiss, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .st-gear span, .pl-header .yt-uix-button-icon-gear, .pl-header .yt-uix-button-icon-playlist-share, #watch7-subscription-container .channel-settings-link .yt-uix-button-icon-settings, [wl^="w8"] .st-floater-icon, .checkbox-on-off > label:after, .yt-uix-button-icon-c4-editor-edit, .oz-notification-dismiss, .oz-comment_post-dismiss, .oz-widget-dismiss {
     filter: invert(1) !important;
 }
 .pl-header .yt-uix-button-icon-wrapper {
     filter: unset
 }
-.watch8-floater {
+.watch8-floater, .st-floater {
     background:#222;border: 1px solid #3c3c3c
 }
 .watch8-menuitem {
@@ -72,5 +72,28 @@
 }
 .yt-uix-form-input-select {
     text-shadow: none;
+}
+    
+.cardified-page .yt-card #watch7-creator-bar {
+        border-bottom-color: #111
+}
+[modern-cards][dark] .cardified-page .distiller_yt-thread_user-content .cssAction_Expander {
+        background:#1a1a1a !important;
+}
+[modern-cards][dark] .cardified-page .distiller_yt-thread_user-content .cssAction_Expander:hover {
+        color:#ff8000 !important;
+}
+    
+.vdbg-content .ddd-build-info {
+    color: unset;
+    background: #111111;
+}
+    
+.branded-page-v2-primary-col .distiller_streamcontent:not(.feed) .distiller_yt_embed_wrapper, .branded-page-v2-primary-col .distiller_streamcontent:not(.feed) .distiller_yt_embed_wrapper .distiller_yt-thread_user-content.yt-uix-expander-collapsed .cssAction_Expander {
+    background-color: #1a1a1a;
+}
+
+.branded-page-v2-primary-col .distiller_streamcontent:not(.feed) .distiller_yt_embed_wrapper {
+    border: 1px solid #323232;
 }
 }
