@@ -1,0 +1,50 @@
+/* ==UserStyle==
+@name           Skeuomorphic Theme for V3 + StarTube 2016
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Take 2 of a skeuomorphic theme.
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+    [modern-cards][dark] .cardified-page #yt-masthead-container {
+    background: linear-gradient(180deg, #222222d9, #00000026) !important;
+    backdrop-filter: blur(8px);
+}
+
+#masthead-search .search-btn-component, #masthead-search .search-btn-component .start {
+    background: linear-gradient(180deg, #737373, #353535, #00000026) !important;
+}
+
+[modern-cards][dark] #appbar-guide-menu {
+    background: linear-gradient(#090909, #30303000), url(https://cdn.pixabay.com/photo/2015/09/10/14/14/scratched-934483_1280.jpg) 0px 0px !important;
+    background-size: cover !important;
+}
+
+[modern-cards][dark] #appbar-guide-menu #guide-container, [modern-cards][dark] .cardified-page #watch7-headline {
+    background:none !important;
+}
+
+.yt-shelf-grid-item .ux-thumb-wrap {
+    box-shadow: 0px 1px 12px #000;
+}
+
+[modern-styles]:not([poly-styles]) .feed-item-container.browse-list-item-container {
+    background: linear-gradient(180deg, #222, #00000054);
+}
+
+#guide-container .guide-item.guide-item-selected, #guide-container .guide-collection-item .guide-item.guide-item-selected, #guide-container .guide-item.guide-item-selected:hover {
+    background: linear-gradient(180deg, #cc181e, #510505);
+    box-shadow: 0px 1px 20px 0px black;
+}
+
+.dark-mode.cardified-page .st-watch-row, .dark-mode.cardified-page #st-below-title-row, .dark-mode.cardified-page .st-desc-content {
+    background: linear-gradient(3deg, #222, #121212);
+    box-shadow: 0px 0px 9px 0px #00000075;
+}
+
+.watch8-floater, .st-floater {
+    background: linear-gradient(180deg, #222, #080808);
+    border: 1px solid #252525;
+}
+}
