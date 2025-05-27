@@ -7,21 +7,23 @@
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com") {
-    [modern-cards][dark] .cardified-page #yt-masthead-container {
+    [modern-cards][dark] .cardified-page #yt-masthead-container, .dark-mode .st-acme {
     background: linear-gradient(180deg, #222222d9, #00000026) !important;
     backdrop-filter: blur(8px);
 }
 
 #masthead-search .search-btn-component, #masthead-search .search-btn-component .start {
-    background: linear-gradient(180deg, #737373, #353535, #00000026) !important;
+    background: linear-gradient(180deg, #3571d5, #1c3479, #1c1b6991) !important;
+    border-radius: 0px 100px 100px 0px;
 }
 
 [modern-cards][dark] #appbar-guide-menu {
     background: linear-gradient(#090909, #30303000), url(https://cdn.pixabay.com/photo/2015/09/10/14/14/scratched-934483_1280.jpg) 0px 0px !important;
     background-size: cover !important;
+    box-shadow: 5px 0px 16px 0px black !important;
 }
 
-[modern-cards][dark] #appbar-guide-menu #guide-container, [modern-cards][dark] .cardified-page #watch7-headline, [modern-cards][dark] .dark-mode #appbar-guide-menu::before, [modern-cards][dark] .cardified-page .distiller_yt_instance{
+[modern-cards][dark] #appbar-guide-menu #guide-container, [modern-cards][dark] .cardified-page #watch7-headline, [modern-cards][dark] .dark-mode #appbar-guide-menu::before, [modern-cards][dark] .cardified-page .distiller_yt_instance, #yt-masthead-user #sb-button-notify, a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item, .epic-nav-item{
     background:none !important;
 }
 
@@ -61,7 +63,7 @@
     background: #161616 !important;
 }
     
-[modern-cards][dark] .cardified-page .yt-card {
+[modern-cards][dark] .cardified-page .yt-card, [modern-cards]:not([chan-loc="videos"]) .dark-mode.exp-top-guide #page.channel .branded-page-v2-has-top-row .branded-page-v2-secondary-col .branded-page-box, [modern-cards]:not([chan-loc="playlists"]) .dark-mode.exp-top-guide #page.channel .branded-page-v2-has-top-row .branded-page-v2-secondary-col .branded-page-box {
     background: linear-gradient(124deg, #1a1a1a, #222, #080808) !important;
     box-shadow: 0px 1px 12px #000;
 }
@@ -72,5 +74,33 @@
     
 .st-panel-close {
     filter: invert(1);
+}
+    
+.yt-uix-button-default, #st-account-menu-details a, [modern-cards][dark] .yt-uix-button-subscribe-unbranded {
+    background: linear-gradient(180deg, #737373 10%, #353535 40%, #000) !important;
+    border-radius: 8px;
+}
+    
+[exp-rounded-topbar-pfp] .yt-masthead-user-icon .yt-thumb {
+    border-radius: 10%;
+}
+    
+[modern-styles] .epic-nav-item-heading {
+    background: linear-gradient(180deg, black 10%, #101010 60%, #414141) !important;
+    box-shadow: 0px 0px 12px var(--default-red);
+    border: none !important;
+    border-radius: 10px;
+}
+    
+#yt-masthead #masthead-search-terms {
+    border-radius: 100px 0px 0px 100px;
+}
+    
+[modern-cards][dark]:not([exp-material-search]) #search-btn span {
+    opacity: 1;
+}
+    
+#masthead-search-terms input {
+    padding: 2px 10px;
 }
 }
