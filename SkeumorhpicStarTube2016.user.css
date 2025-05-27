@@ -21,11 +21,11 @@
     background-size: cover !important;
 }
 
-[modern-cards][dark] #appbar-guide-menu #guide-container, [modern-cards][dark] .cardified-page #watch7-headline {
+[modern-cards][dark] #appbar-guide-menu #guide-container, [modern-cards][dark] .cardified-page #watch7-headline, [modern-cards][dark] .dark-mode #appbar-guide-menu::before, [modern-cards][dark] .cardified-page .distiller_yt_instance{
     background:none !important;
 }
 
-.yt-shelf-grid-item .ux-thumb-wrap {
+.yt-shelf-grid-item .ux-thumb-wrap, .distiller_yt-thread_avatar {
     box-shadow: 0px 1px 12px #000;
 }
 
@@ -39,12 +39,38 @@
 }
 
 .dark-mode.cardified-page .st-watch-row, .dark-mode.cardified-page #st-below-title-row, .dark-mode.cardified-page .st-desc-content {
-    background: linear-gradient(3deg, #222, #121212);
+    background: linear-gradient(3deg, #222, #121212) !important;
     box-shadow: 0px 0px 9px 0px #00000075;
 }
 
 .watch8-floater, .st-floater {
     background: linear-gradient(180deg, #222, #080808);
     border: 1px solid #252525;
+}
+    
+#appbar-guide-menu .guide-section-separator {
+    box-shadow: 0px 5px 11px 1px #000000;
+}
+    
+[modern-cards][dark] .cardified-page #watch-discussion {
+    background: #161616 !important;
+    box-shadow: 0px 1px 12px #000;
+}
+    
+[modern-cards][dark] .cardified-page .distiller_yt-thread_user-content .cssAction_Expander {
+    background: #161616 !important;
+}
+    
+[modern-cards][dark] .cardified-page .yt-card {
+    background: linear-gradient(124deg, #1a1a1a, #222, #080808) !important;
+    box-shadow: 0px 1px 12px #000;
+}
+    
+[modern-cards] .cardified-page .branded-page-v2-primary-col .branded-page-box {
+    background: linear-gradient(300deg, #0a0a0a, #272727);
+}
+    
+.st-panel-close {
+    filter: invert(1);
 }
 }
