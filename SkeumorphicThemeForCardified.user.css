@@ -1,76 +1,133 @@
 /* ==UserStyle==
-@name           Skeuomorphic Theme for V3 + StarTube 2016
-@namespace      github.com/openstyles/stylus
-@version        1.0.0
-@description    Take 2 of a skeuomorphic theme.
-@author         Me
+@name           Skeumorphic Theme for V3
+@namespace      github.com/ArbestRi02/
+@version        1.0.2
+@description    Makes V3 use skeuomorphic theming.
+@author         ArbestRi
+@preprocessor   less
 ==/UserStyle== */
 
-@-moz-document domain("youtube.com") {
-    [modern-cards][dark] .cardified-page #yt-masthead-container {
-    background: linear-gradient(180deg, #222222d9, #00000026) !important;
-    backdrop-filter: blur(8px);
-}
-
-#masthead-search .search-btn-component, #masthead-search .search-btn-component .start {
-    background: linear-gradient(180deg, #737373, #353535, #00000026) !important;
-}
-
-[modern-cards][dark] #appbar-guide-menu {
-    background: linear-gradient(#090909, #30303000), url(https://cdn.pixabay.com/photo/2015/09/10/14/14/scratched-934483_1280.jpg) 0px 0px !important;
-    background-size: cover !important;
-}
-
-[modern-cards][dark] #appbar-guide-menu #guide-container, [modern-cards][dark] .cardified-page #watch7-headline, [modern-cards][dark] .dark-mode #appbar-guide-menu::before, [modern-cards][dark] .cardified-page .distiller_yt_instance{
-    background:none !important;
-}
-
-.yt-shelf-grid-item .ux-thumb-wrap, .distiller_yt-thread_avatar {
-    box-shadow: 0px 1px 12px #000;
-}
-
-[modern-styles]:not([poly-styles]) .feed-item-container.browse-list-item-container {
-    background: linear-gradient(180deg, #222, #00000054);
-}
-
+@-moz-document domain("www.youtube.com") {
+#yt-masthead-container, .cardified-page #yt-masthead-container, .cardified-page #masthead-appbar-container {
+    background: linear-gradient(0deg, #aaaaaa91, #ffffffc4);border-bottom:unset;box-shadow: 0px 1px 20px #545454;}
+    
+.cardified-page #masthead-appbar-container, #masthead-search-terms, #footer-container {
+    background: linear-gradient(0deg, #ffffffc4, #aaaaaa91) !important;}
+    
+#appbar-guide-menu {
+    background: linear-gradient(0deg, #fff, #cbcbcb) !important;box-shadow: -4px 15px 20px black !important;}
+    
+.yt-alert-default.yt-alert-error, .yt-alert-actionable.yt-alert-error, .yt-alert-naked.yt-alert-error .yt-alert-icon, .yt-alert-small.yt-alert-error {
+    background: linear-gradient(180deg, red, #aa0005, red) !important;box-shadow: 0px 0px 8px black;}
+    
 #guide-container .guide-item.guide-item-selected, #guide-container .guide-collection-item .guide-item.guide-item-selected, #guide-container .guide-item.guide-item-selected:hover {
-    background: linear-gradient(180deg, #cc181e, #510505);
-    box-shadow: 0px 1px 20px 0px black;
-}
+    background: repeating-linear-gradient(120deg, #ff474d 0%, #c70000 10%) !important;box-shadow: 0px 0px 8px black;}
+    
+.feed-item-container.browse-list-item-container {
+    border-top: 1px solid #767676;box-shadow: 1px 5px 20px black;}
+  
+body {
+background-image: url(https://raw.githubusercontent.com/ArbestRi02/ArbestRi-V3Themes/main/skeumorphic-background.png) !important;}
+    
+.channel-header .secondary-header-contents {
+    background: linear-gradient(0deg, white, #b0b6be);}
+    
+.video-thumb, .distiller_yt-thread_avatar {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);}
+    
+.sb-on, .oz-embed-panel {
+    background: #ffffffa6;box-shadow: 0 2px 20px 6px #525252;}
+    
+.main-notification-panel, .oz-static-loading, .sb-card-border, .site-center-aligned:not(.guide-pinned) #appbar-guide-menu:before, #appbar-nav .yt-uix-button.yt-uix-button-epic-nav-item, .distiller_yt-thread_user-content.yt-uix-expander-collapsed .cssAction_Expander, #guide-main, #watch-context-container {
+    background:unset !important;}
+    
+.channel-header .about-network-links, .channel-header .about-custom-links, .sb-on, .cardified-page #masthead-appbar-container, #masthead-search-terms, .yt-pl-thumb-link .yt-pl-thumb-overlay, .yt-pl-thumb .sidebar, #yt-masthead-container, .cardified-page #masthead-appbar-container, .watch-large #watch7-playlist-tray, .watch-medium #watch7-playlist-tray, .pl-header-thumb .pl-header-thumb-overlay {
+    backdrop-filter: blur(4px);}
+    
+.sb-card-body-arrow {
+    display: none;}
+    
+.watch-large #watch7-playlist-tray, .watch-medium #watch7-playlist-tray {
+    background: #00000073 !important;}
+    
+#watch7-sidebar-contents, .cardified-page #watch7-sidebar-contents {
+    background: linear-gradient(0deg, #b0b5bd 30%, transparent);}
+    
+#watch8-actions-row, .distiller_yt_instance,#watch-discussion, #watch7-notification-area {
+    background: linear-gradient(0deg, #b0b5bd, white);}
+    
+.cardified-page .yt-card, .cardified-page.exp-individual-cards-watch #watch7-sidebar, #masthead-expanded-container, .branded-page-v2-col-container, #watch7-sidebar {
+    box-shadow: 0px 20px 20px rgb(0 0 0 / 32%) !important;}
+    
+.guide-section-separator {
+    border-bottom: 1px solid #b8b8b8;box-shadow: 0px 3px 10px black;}
+    
+.yt-masthead-user-icon .yt-thumb {
+    border-radius: 10% !important;}
+    
+#masthead-search-terms input {
+    box-shadow: inset 0 0 11px white;}
+    
+.appbar-mini-cinema #player.watch-medium:before, .watch-playlists-drawer li:hover, .context-back-link:hover,.guide-view-more:hover,#guide-container .guide-item:hover,#guide-container .guide-collection-item:hover .guide-item, .yt-uix-button-menu li:hover, .yt-uix-button-menu .yt-uix-button-menu-item.selected,.yt-uix-button-menu .yt-uix-button-menu-item-highlight .yt-uix-button-menu-item,.yt-uix-button-menu .yt-uix-button-menu-item:hover {
+    background: linear-gradient(0deg, black, #3f3f3f);box-shadow: 0px 0px 20px black;transition:color 0.2s;}
+    
+.action-panel-content, .feed-item-container.browse-list-item-container, .branded-page-v2-subnav-container {
+    background: linear-gradient(0deg, #b0b5bd, transparent) !important;}
+    
+.watch-extras-section .content {
+    color: #4c4c4c;}
+    
+.yt-uix-button-default, .yt-uix-button-default[disabled], .yt-uix-button-default[disabled]:hover,.yt-uix-button-default[disabled]:active, .yt-uix-button-default[disabled]:focus, .metadata-inline, .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribed-unbranded, #st-account-menu-details a, .yt-uix-button-menu, .yt-uix-form-input-select, .distiller-standard-button {
+    background: linear-gradient(180deg, #fff 42.99%, #f3f3f3 51.62%, #d4d4d4 99.49%) !important;}
+    
+#yt-masthead-user .yt-uix-button-icon-bell {
+    left: 4px;}
 
-.dark-mode.cardified-page .st-watch-row, .dark-mode.cardified-page #st-below-title-row, .dark-mode.cardified-page .st-desc-content {
-    background: linear-gradient(3deg, #222, #121212) !important;
-    box-shadow: 0px 0px 9px 0px #00000075;
-}
+#yt-masthead-user #sb-button-notify {
+    border: 1px solid #d3d3d3;}
+    
+.watch-playlists-drawer ul {
+    background: linear-gradient(0deg, #fff, #bbb 50%, #ededed 60%);}
+    
+.yt-alert .close {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflEXP50f.png) -47px -810px !important;}
+    
+#watch8-close .watch8-action-panel-dismiss {
+    background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-watch8-vflCrfehN.png) 0 -140px !important;}
+    
+.yt-alert-default.yt-alert-info, .yt-alert-actionable.yt-alert-info, .yt-alert-naked.yt-alert-info .yt-alert-icon, .yt-alert-small.yt-alert-info {
+    background: linear-gradient(180deg, #0083ff, #0042b9, #0083ff);box-shadow: 0px 0px 8px black;}
+    
+.distiller_yt-sb-standin .box {
+    background: linear-gradient(0deg, #e3e3e3 10%, #d9d9d9 60%, white);}
+    
+.distiller_yt-sb-standin .callout-inner {
+    border: unset;}
+    
+.yt-shelf-grid-item .ux-thumb-wrap {
+    box-shadow: 0px 1px 11px #000;}
 
-.watch8-floater, .st-floater {
-    background: linear-gradient(180deg, #222, #080808);
-    border: 1px solid #252525;
-}
+.yt-uix-checkbox-on-off label {
+    background: linear-gradient(180deg, #b4b4b4, #898989);}
     
-#appbar-guide-menu .guide-section-separator {
-    box-shadow: 0px 5px 11px 1px #000000;
-}
+body #masthead-expanded-container, body.cardified-page #masthead-expanded-container {
+    background: linear-gradient(180deg, #c0c2c5, white);}
     
-[modern-cards][dark] .cardified-page #watch-discussion {
-    background: #161616 !important;
-    box-shadow: 0px 1px 12px #000;
-}
+#masthead-positioner #yt-masthead #appbar-guide-button, .guide-quick-filter {
+    background:white !important}
     
-[modern-cards][dark] .cardified-page .distiller_yt-thread_user-content .cssAction_Expander {
-    background: #161616 !important;
-}
+.yt-uix-button-primary, .yt-uix-button-primary[disabled], .yt-uix-button-primary[disabled]:hover, .yt-uix-button-primary[disabled]:active, .yt-uix-button-primary[disabled]:focus {
+    background: linear-gradient(180deg, #0088ff, #48baff 35%, #0065be);}
     
-[modern-cards][dark] .cardified-page .yt-card {
-    background: linear-gradient(124deg, #1a1a1a, #222, #080808) !important;
-    box-shadow: 0px 1px 12px #000;
-}
+.feed-item-container.browse-list-item-container {
+    padding: 0 18px !important;margin: 0 !important;}
     
-[modern-cards] .cardified-page .branded-page-v2-primary-col .branded-page-box {
-    background: linear-gradient(300deg, #0a0a0a, #272727);
-}
+.yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success {
+    background: linear-gradient(180deg, #25c700, #006e26, #00d43f);box-shadow: 0px 0px 8px black;}
     
-.st-panel-close {
-    filter: invert(1);
-}
+li.guide-section h3 {
+    color: #4d4d4d;}
+    
+#watch7-action-buttons {
+    background:#b0b5bd;}
 }
