@@ -7,7 +7,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com") {
-    [modern-cards][dark] .cardified-page #yt-masthead-container, .dark-mode .st-acme {
+    [modern-cards][dark] .cardified-page #yt-masthead-container, .dark-mode .st-acme, [modern-cards][dark] .cardified-page #masthead-appbar-container {
     background: linear-gradient(180deg, #222222d9, #00000026) !important;
     backdrop-filter: blur(8px);
 }
@@ -23,12 +23,12 @@
     box-shadow: 5px 0px 16px 0px black !important;
 }
 
-[modern-cards][dark] #appbar-guide-menu #guide-container, [modern-cards][dark] .cardified-page #watch7-headline, [modern-cards][dark] .dark-mode #appbar-guide-menu::before, [modern-cards][dark] .cardified-page .distiller_yt_instance, #yt-masthead-user #sb-button-notify, a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item, .epic-nav-item{
+[modern-cards][dark] #appbar-guide-menu #guide-container, [modern-cards][dark] .cardified-page #watch7-headline, [modern-cards][dark] .dark-mode #appbar-guide-menu::before, [modern-cards][dark] .cardified-page .distiller_yt_instance, #yt-masthead-user #sb-button-notify, a.yt-uix-button.yt-uix-button-epic-nav-item, button.yt-uix-button-epic-nav-item, .epic-nav-item, .watch7-playlist-bar-left, [exp-modern-playlists] #watch7-playlist-bar-controls, [exp-modern-playlists] .watch7-playlist-bar-secondary-controls{
     background:none !important;
 }
 
-.yt-shelf-grid-item .ux-thumb-wrap, .distiller_yt-thread_avatar {
-    box-shadow: 0px 1px 12px #000;
+.yt-shelf-grid-item .ux-thumb-wrap, .distiller_yt-thread_avatar, #watch7-sidebar {
+    box-shadow: 0px 1px 12px #000 !important;
 }
 
 [modern-styles]:not([poly-styles]) .feed-item-container.browse-list-item-container {
@@ -59,7 +59,7 @@
     box-shadow: 0px 1px 12px #000;
 }
     
-[modern-cards][dark] .cardified-page .distiller_yt-thread_user-content .cssAction_Expander {
+[modern-cards][dark] .cardified-page .distiller_yt-thread_user-content .cssAction_Expander, .cardified-page #watch7-sidebar-contents > .watch-sidebar-section, .cardified-page .v3 #watch7-sidebar-contents {
     background: #161616 !important;
 }
     
@@ -102,5 +102,31 @@
     
 #masthead-search-terms input {
     padding: 2px 10px;
+}
+    
+.yt-alert-default.yt-alert-info, .yt-alert-actionable.yt-alert-info, .yt-alert-naked.yt-alert-info .yt-alert-icon, .yt-alert-small.yt-alert-info, .yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success {
+    background: linear-gradient(357deg, #0069c3, #002943);
+}
+    
+.yt-alert .close {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflEXP50f.png) -47px -810px !important;
+}
+    
+.yt-uix-button-primary{
+    background: linear-gradient(180deg, #0083ff 30%, #003b6d, #004f87);
+    border-radius: 8px;
+}
+    
+[exp-modern-playlists] .cardified-page .watch7-playlist-bar-right {
+    background: url(https://raw.githubusercontent.com/Randomuser8219/Randomuser8219-Userstyles/refs/heads/main/skeuomorphic-background-2.png);
+    box-shadow: 0.5px 5px 6px 0px #00000091;
+}
+    
+[exp-modern-playlists] #watch7-playlist-tray {
+    background: url(https://cdn.pixabay.com/photo/2015/09/10/14/14/scratched-934483_1280.jpg) -300px -90px !important;
+}
+    
+#watch7-playlist-tray .video-list-item {
+    border-bottom: 2px outset #6f6f6f !important;
 }
 }
