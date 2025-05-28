@@ -63,7 +63,7 @@
     background: #161616 !important;
 }
     
-[modern-cards][dark] .cardified-page .yt-card, [modern-cards]:not([chan-loc="videos"]) .dark-mode.exp-top-guide #page.channel .branded-page-v2-has-top-row .branded-page-v2-secondary-col .branded-page-box, [modern-cards]:not([chan-loc="playlists"]) .dark-mode.exp-top-guide #page.channel .branded-page-v2-has-top-row .branded-page-v2-secondary-col .branded-page-box {
+[modern-cards][dark] .cardified-page .yt-card  {
     background: linear-gradient(124deg, #1a1a1a, #222, #080808) !important;
     box-shadow: 0px 1px 12px #000;
 }
@@ -76,7 +76,7 @@
     filter: invert(1);
 }
     
-.yt-uix-button-default, #st-account-menu-details a, [modern-cards][dark] .yt-uix-button-subscribe-unbranded {
+.yt-uix-button-default, #st-account-menu-details a, [modern-cards][dark] .yt-uix-button-subscribe-unbranded, .oz-panel-previous-posts-button {
     background: linear-gradient(180deg, #737373 10%, #353535 40%, #000) !important;
     border-radius: 8px;
 }
@@ -112,21 +112,45 @@
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflEXP50f.png) -47px -810px !important;
 }
     
-.yt-uix-button-primary{
+.yt-uix-button-primary, [modern-styles] .right_actions > button:last-child{
     background: linear-gradient(180deg, #0083ff 30%, #003b6d, #004f87);
     border-radius: 8px;
 }
     
-[exp-modern-playlists] .cardified-page .watch7-playlist-bar-right {
+[exp-modern-playlists] .cardified-page .watch7-playlist-bar-right, .main-notification-panel, .pl-header {
     background: url(https://raw.githubusercontent.com/Randomuser8219/Randomuser8219-Userstyles/refs/heads/main/skeuomorphic-background-2.png);
     box-shadow: 0.5px 5px 6px 0px #00000091;
 }
     
-[exp-modern-playlists] #watch7-playlist-tray {
+[exp-modern-playlists] #watch7-playlist-tray{
     background: url(https://cdn.pixabay.com/photo/2015/09/10/14/14/scratched-934483_1280.jpg) -300px -90px !important;
 }
     
 #watch7-playlist-tray .video-list-item {
     border-bottom: 2px outset #6f6f6f !important;
+}
+    
+[modern-cards]:not([chan-loc="videos"]) .dark-mode.exp-top-guide #page.channel .branded-page-v2-has-top-row .branded-page-v2-secondary-col .branded-page-box, [modern-cards]:not([chan-loc="playlists"]) .dark-mode.exp-top-guide #page.channel .branded-page-v2-has-top-row .branded-page-v2-secondary-col .branded-page-box, .branded-page-v2-primary-col .distiller_streamcontent:not(.feed) .distiller_yt_embed_wrapper {
+    background: linear-gradient(242deg, #090909, #30303000), url(https://cdn.pixabay.com/photo/2015/09/10/14/14/scratched-934483_1280.jpg) 0px 0px !important;
+    box-shadow: 1px 5px 10px 0px black !important;
+}
+    
+[modern-styles] .distiller_yt_instance .distiller_yt-sb .oz-comment_post-dismiss::after {
+    background: linear-gradient(180deg, #737373 10%, #d7d7d7 40%, #e1e1e1) !important;
+    border-radius: 8px;
+}
+    
+#yt-masthead #search-btn .yt-uix-button-content {
+    margin: 0 10px;
+}
+    
+.oz-panel-previous-posts-button {
+    margin:unset !important;
+    width:410px;
+}
+
+.pl-header {
+    padding-left: 10px;
+    padding-top: 10px;
 }
 }
