@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Pre-Late 2023 YT Amsterdam Improvements
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    Improves upon Magma_Craft's early Amsterdam userstyle.
 @author         Me
 ==/UserStyle== */
@@ -14,7 +14,19 @@
 ytd-guide-section-renderer[modern-typography] #guide-section-title.ytd-guide-section-renderer {
     font-weight: normal;
 }
-
+#voice-search-button.ytd-masthead {
+    background-color: unset !important;
+}
+.page-header-view-model-wiz__page-header-title--page-header-title-large {
+    margin-top: 12px !important;
+    margin-bottom: 8px !important;
+}
+.ytSuggestionComponentRightContainer {
+    display:none !important;
+}
+}
+@-moz-document url-prefix("https://www.youtube.com/@"), url-prefix("https://www.youtube.com/channel/"), url-prefix("https://www.youtube.com/c/") {
+    
 .page-header-view-model-wiz__page-header-flexible-actions--page-header-flexible-actions-margin-bottom {
     margin-bottom: 0px;
 }
@@ -32,16 +44,4 @@ ytd-guide-section-renderer[modern-typography] #guide-section-title.ytd-guide-sec
     align-content: flex-start;
     flex-wrap: wrap;
     justify-content: flex-end;
-}
-#voice-search-button.ytd-masthead {
-    background-color: unset !important;
-}
-.page-header-view-model-wiz__page-header-title--page-header-title-large {
-    margin-top: 12px !important;
-    margin-bottom: 8px !important;
-    color: var(--yt-spec-text-primary) !important;
-    font-size: 1.6em !important;
-    line-height: 1.4em !important;
-    font-weight: 500 !important;
-}
-}
+    }}
