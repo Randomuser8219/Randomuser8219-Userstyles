@@ -312,4 +312,19 @@
     background: unset;
     border-radius: 1.5rem;
 }
+
+[dir=ltr] .navigation--micro {
+    display: none;
+}
+    
+[dir] .navigation-links--absolute .navigation-link .button__content {
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+    
+[dir] .channel-selector__item--selected {
+    background-color: unset;
+    border-radius: var(--border-radius);
+}
 }
