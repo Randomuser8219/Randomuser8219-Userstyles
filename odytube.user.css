@@ -313,8 +313,8 @@
     border-radius: 1.5rem;
 }
 
-[dir=ltr] .navigation--micro {
-    display: none;
+[dir=ltr] .navigation--micro, .button.button--no-style.button--file-action.header__navigationItem--balance, .header__menu--right > .header__buttons > button.button.button--no-style.header__navigationItem--icon:nth-of-type(1) {
+    display: none !important;
 }
     
 [dir] .navigation-links--absolute .navigation-link .button__content {
@@ -326,5 +326,18 @@
 [dir] .channel-selector__item--selected {
     background-color: unset;
     border-radius: var(--border-radius);
+}
+    
+.header__navigationItem--icon svg{
+    width: 24px;
+    height: 24px;
+    stroke: white;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+    
+[dir=ltr] .channelPage-wrapper .tabs__list {
+    padding-bottom: 0px;
 }
 }
