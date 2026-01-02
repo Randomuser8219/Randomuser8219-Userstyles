@@ -449,18 +449,14 @@ body #footer-container {
 [exp-modern-playlists] #watch7-playlist-tray .video-list-item .stat {
     color: #b8b8b8;
 }
-    
-.yt-scrollbar-wide ::-webkit-scrollbar {
+
+.yt-scrollbar ::-webkit-scrollbar {
     width: 10px;
     height: 9px;
 }
     
-.yt-scrollbar-dark ::-webkit-scrollbar-thumb {
-    border:none !important;
-    background: #8e8e8e;
-}
-    
 .yt-scrollbar ::-webkit-scrollbar-thumb {
+    border:none !important;
     background: #8e8e8e;
 }
     
@@ -572,9 +568,9 @@ body #footer-container {
     background-color: #1a1a1a;
     }}
 
-.branded-page-v2-primary-col .distiller_streamcontent:not(.feed) .distiller_yt_embed_wrapper {
+.branded-page-v2-primary-col .distiller_streamcontent:not(.feed) .distiller_yt_embed_wrapper, .yt-badge {
     & when (@DarkMode = 1) {
-    border: 1px solid #323232;
+    border: 1px solid #323232 !important;
     }}
     
 #startube-astro-settings {
