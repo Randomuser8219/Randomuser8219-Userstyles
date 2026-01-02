@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name           2016 Tweaks for V3 + StarTube
 @namespace      youtube.com
-@version        1.2.5
+@version        1.2.6
 @description    Tweaks StarTube's 2016 style to be more accurate.
 @author         Randomuser8219
 @preprocessor   less
-@var            select              RedColor                 "Red color & 404 page"              ["Classic/2016*", "Ringo/2017", "Ringo2/2024"]
+@var            select              RedColor                 "Red color & 404 page"              ["Classic*", "Ringo", "Ringo2"]
 @var            checkbox            PlusYouTube                "+YouTube on footer"       0
 @var            checkbox            DarkMode                   "Adapt to dark mode"                0
 ==/UserStyle== */
@@ -75,7 +75,7 @@
     .yt-lockup {
         line-height: 1.3em}
 
-    .pl-header .pl-header-details, .pl-video-detail-container .pl-video-time, .video-list .video-list-item .description, .video-list .video-list-item .stat, .shelf-item .shelf-description, .no-videos-message, .no-recent-activity, .feed-item-main .feed-item-header a, .feed-item-main a.yt-user-name, .lohp-video-metadata, .lohp-video-metadata .view-count {
+    .pl-header .pl-header-details, .pl-video-detail-container .pl-video-time, .video-list .video-list-item .description, .video-list .video-list-item .stat, .shelf-item .shelf-description, .no-videos-message, .no-recent-activity, .feed-item-main .feed-item-header a, .feed-item-main a.yt-user-name, .lohp-video-metadata, .lohp-video-metadata .view-count, .stat.attribution > span.run.run-text {
         color: #767676 !important;}
 
     .guide-pinning-enabled.guide-pinned #appbar-guide-menu, .guide-pinning-enabled.show-guide.guide-pinned #appbar-guide-menu {
@@ -267,7 +267,7 @@ opacity:1}
 [exp-modern-playlists] #watch7-playlist-tray .video-list-item .count {
     text-align: left;padding-left: 5px;}
     
-#watch7-playlist-tray .playlist-bar-item-playing .count {
+[exp-modern-playlists] #watch7-playlist-tray .playlist-bar-item-playing .count {
     & when (@RedColor = Ringo) {
     color:#f00 !important; }
     & when (@RedColor = Ringo2) {
@@ -286,10 +286,18 @@ opacity:1}
     content:" videos";cursor:text}
     
 [exp-modern-playlists] .watch7-playlist-bar-left .title:after {
-    content: "";position: absolute;display: block;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -327px -146px;width: 24px;height: 24px;right: 19px;top: 15px;cursor: pointer;}
+    content: "";
+    position: absolute;
+    display: block;
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -327px -146px;
+    width: 24px;
+    height: 24px;
+    right: 12px;
+    top: 15px;
+    cursor: pointer;}
     
 #watch7-playlist-tray .video-list-item a {
-    padding: 7px 7px 0;}
+    padding: 7px 7px 6px;}
     
 [exp-modern-playlists] #watch7-playlist-bar-controls {
     line-height: 0px}
@@ -433,6 +441,34 @@ body #footer-container {
 #guide-subscriptions-section > h3:after {
     content: "SUBSCRIPTIONS";
     font-size: 11px; }
+    
+[modern-cards] .channel-header .primary-header-contents {
+    padding: 20px 15px 10px;
+}
+    
+[exp-modern-playlists] #watch7-playlist-tray .video-list-item .stat {
+    color: #b8b8b8;
+}
+    
+.yt-scrollbar-wide ::-webkit-scrollbar {
+    width: 10px;
+    height: 9px;
+}
+    
+.yt-scrollbar-dark ::-webkit-scrollbar-thumb {
+    border:none !important;
+    background: #8e8e8e;
+}
+    
+.yt-scrollbar ::-webkit-scrollbar-thumb {
+    background: #8e8e8e;
+}
+    
+.yt-scrollbar-dark ::-webkit-scrollbar-track {
+    border-left-color: #434343;
+    background: #434343;
+    -webkit-box-shadow: inset 0 0 1px #434343;
+}
 /* dark mode specific */
     .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded, .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded[disabled], .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded[disabled]:hover, .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded[disabled]:active, .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded[disabled]:focus {
     & when (@DarkMode = 1) {
