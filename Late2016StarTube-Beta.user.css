@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           2016 Tweaks for V3 + StarTube
 @namespace      youtube.com
-@version        1.2.6
+@version        1.2.7
 @description    Tweaks StarTube's 2016 style to be more accurate.
 @author         Randomuser8219
 @preprocessor   less
@@ -48,7 +48,7 @@
         font-family: Roboto, Arial, sans-serif;
     }
     
-    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time, .yt-alert-actionable .yt-alert-buttons, .yt-alert-default .yt-alert-content, #footer-links-primary, #footer-links-secondary a, #safety-form label, #c4-about-tab .about-custom-link, #c4-about-tab .about-stat-value, .yt-uix-tooltip-tip-content, .yt-gb-preview-videos-title, .channel-header .about-custom-link-text, .lohp-video-link, .feed-item-actions-line .feed-item-owner {
+    .category-header .category-title, .secondary-header-contents .nav-text, .branded-page-v2-secondary-col .branded-page-related-channels-see-more a, .video-time, .yt-alert-actionable .yt-alert-buttons, .yt-alert-default .yt-alert-content, #footer-links-primary, #footer-links-secondary a, #safety-form label, #c4-about-tab .about-custom-link, #c4-about-tab .about-stat-value, .yt-uix-tooltip-tip-content, .yt-gb-preview-videos-title, .channel-header .about-custom-link-text, .lohp-video-link, .feed-item-actions-line .feed-item-owner{
     font-weight: 500}
 
     .cardified-page .branded-page-related-channels h2 {
@@ -58,7 +58,10 @@
         display: none !important }
 
     .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribed-unbranded, .yt-uix-button-subscribe-unbranded[disabled]:focus {
+    & when (@DarkMode = 0) {
         border: 1px solid #ccc; background-color: #f8f8f8; font-size: 11px !important; }
+    & when (@DarkMode = 1) {
+        border: 1px solid #333; background-color: #f8f8f8; font-size: 11px !important; }}
 
     .profileLink, .action-panel-content:hover a, .pl-video-detail-container .pl-video-owner a:hover, .pl-video:hover .pl-video-title-link,.pl-video:hover .pl-video-owner a, .distiller_yt-post_comment_section .link_action .link_action_text, .distiller_yt-thread .sentiment .count, .distiller_yt-thread .sentiment .count_active, .distiller_yt-thread_user-content .run-link, .feed-header .metadata a:hover, .yt-uix-button-link, #footer-links-primary a:hover, #footer-links-secondary a:hover, .filter:hover, .yt-lockup-mini .yt-lockup-title:hover, [exp-modern-styles] #watch-discussion .distiller_yt_instance .count, .actionable #watch-like:active .yt-uix-button-content, .actionable #watch-like.yt-uix-button-toggled .yt-uix-button-content{
         color: #167ac6 !important; }
@@ -86,9 +89,6 @@
     
     .exp-top-guide .guide-item .display-name {
         height: 14px; width: 140px;}
-
-    [exp-true-scrollable-guide] #appbar-guide-menu {
-        overflow: overlay !important;}
 
     .exp-new-subscribe-style .yt-uix-button-subscribe-branded {
         padding: 0 10px 0 5px;}
@@ -286,15 +286,7 @@ opacity:1}
     content:" videos";cursor:text}
     
 [exp-modern-playlists] .watch7-playlist-bar-left .title:after {
-    content: "";
-    position: absolute;
-    display: block;
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -327px -146px;
-    width: 24px;
-    height: 24px;
-    right: 12px;
-    top: 15px;
-    cursor: pointer;}
+    content: "";position: absolute;display: block;background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflUwslsd.png) -327px -146px;width: 24px;height: 24px;right: 12px;top: 15px;cursor: pointer;}
     
 #watch7-playlist-tray .video-list-item a {
     padding: 7px 7px 6px;}
@@ -432,7 +424,7 @@ body #footer-container {
 .network-icon-youtube {
     background: no-repeat url(https://raw.githubusercontent.com/Randomuser8219/Randomuser8219-Userstyles/refs/heads/main/2016favicon16x16.png);}
     
-.yt-uix-button-icon-related-close, .yt-uix-button-active .yt-uix-button-icon-related-close {
+.yt-uix-button-icon-related-close, .yt-uix-button-active .yt-uix-button-icon-related-close, .distiller_streamcontent.feed .distiller_yt-thread .distiller_yt-post-option-menu > .oz-sprite, .distiller_streamcontent.feed .distiller_yt-thread .distiller_yt-post-option-menu.yt-uix-button-active > .oz-sprite {
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vfllYIUv0.png) -38px -900px;width: 13px;height: 13px;}
     
 #guide-subscriptions-section > h3 {
@@ -488,7 +480,7 @@ body #footer-container {
     & when (@DarkMode = 1) {
     color: #939393;
     }}
-.yt-uix-button-icon-c4-grid-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow, .yt-uix-button-icon-c4-list-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow, .yt-uix-button-icon-play-all, .watch8-menuitem::before, #watch8-close .watch8-action-panel-dismiss, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .st-gear span, .pl-header .yt-uix-button-icon-gear, .pl-header .yt-uix-button-icon-playlist-share, #watch7-subscription-container .channel-settings-link .yt-uix-button-icon-settings, [wl^="w8"] .st-floater-icon, .checkbox-on-off > label:after, .yt-uix-button-icon-c4-editor-edit, .oz-notification-dismiss, .oz-comment_post-dismiss, .oz-widget-dismiss {
+.yt-uix-button-icon-c4-grid-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow, .yt-uix-button-icon-c4-list-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow, .yt-uix-button-icon-play-all, .watch8-menuitem::before, #watch8-close .watch8-action-panel-dismiss, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .st-gear span, .pl-header .yt-uix-button-icon-gear, .pl-header .yt-uix-button-icon-playlist-share, #watch7-subscription-container .channel-settings-link .yt-uix-button-icon-settings, [wl^="w8"] .st-floater-icon, .checkbox-on-off > label:after, .yt-uix-button-icon-c4-editor-edit, .oz-notification-dismiss, .oz-comment_post-dismiss, .oz-widget-dismiss, .st-panel-close .st-icon, .distiller_streamcontent.feed .post .distiller_yt-post-content > a:first-child:after {
     & when (@DarkMode = 1) {
     filter: invert(1) !important;
     }}
@@ -500,7 +492,7 @@ body #footer-container {
     & when (@DarkMode = 1) {
     background:#222;border: 1px solid #3c3c3c
     }}
-.watch8-menuitem {
+.watch8-menuitem, .c4-checklist-module-title {
     & when (@DarkMode = 1) {
     color: #c3c3c3;
     }}
@@ -552,7 +544,7 @@ body #footer-container {
     & when (@DarkMode = 1) {
         background:#1a1a1a !important;
     }}
-[modern-cards][dark] .cardified-page .distiller_yt-thread_user-content .cssAction_Expander:hover {
+[modern-cards][dark] .cardified-page .distiller_yt-thread_user-content .cssAction_Expander:hover, .distiller_yt-thread_user-content.yt-uix-expander-collapsed .cssAction_Expander .expand_post:hover, .distiller_yt-thread_user-content .cssAction_Expander .collapse_post:hover {
     & when (@DarkMode = 1) {
         color:#ff8000 !important;
     }}
@@ -578,9 +570,9 @@ body #footer-container {
     border-bottom: 1px solid #474747;
     }}
 
-#st-settings-button {
+#st-settings-button, .distiller_streamcontent.feed .distiller_yt-thread_user-content {
     & when (@DarkMode = 1) {
-    color: #aaaaaa;
+    color: #aaa;
     }}
     
 .feed-item-content-wrapper.playlist-promo, .feed-item-content-wrapper.channel-lockup {
@@ -588,4 +580,16 @@ body #footer-container {
     border: 1px solid #3c3c3c;
     box-shadow: 0 1px 2px #1a1a1a;
     }}
+    
+.c4-checklist-module .checklist-item, .caption-line {
+    & when (@DarkMode = 1) {
+    border:unset !important;}}
+    
+.c4-checklist-module .checklist-item:hover {
+    & when (@DarkMode = 1) {
+    background: #333 !important}}
+    
+.yt-uix-form-input-checkbox-element {
+    & when (@DarkMode = 1) {
+    border: 1px solid #3d3d3d;}}
 }
