@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           2016 Tweaks for V3 + StarTube
 @namespace      youtube.com
-@version        1.2.7
+@version        1.2.8
 @description    Tweaks StarTube's 2016 style to be more accurate.
 @author         Randomuser8219
 @preprocessor   less
@@ -54,7 +54,7 @@
     .cardified-page .branded-page-related-channels h2 {
         font-size: 15px; font-weight: 500; text-transform: none; color: #333; }
 
-    .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .yt-subscription-button-subscriber-count-vertical-container, #FEsocial-guide-item, .guide-section:first-child .guide-section-separator, #guide-library-section h3, .guide-section:last-child .guide-section-separator, #watch-playlist-privacy-icon img, [exp-modern-playlists] #watch7-playlist-tray .video-list-item .playlist-time, .yt-uix-button-icon-playlist-bar-prev, .yt-uix-button-icon-playlist-bar-next, .yt-uix-button-icon-playlist-bar-close, #watch7-playlist-tray-trim, .pl-header-details li:nth-of-type(1) .run.run-text, #c4-about-tab .about-network-links {
+    .branded-page-related-channels .yt-subscription-button-subscriber-count-unbranded-horizontal, .yt-subscription-button-subscriber-count-vertical-container, #FEsocial-guide-item, .guide-section:first-child .guide-section-separator, #guide-library-section h3, .guide-section:last-child .guide-section-separator, #watch-playlist-privacy-icon img, [exp-modern-playlists] #watch7-playlist-tray .video-list-item .playlist-time, .yt-uix-button-icon-playlist-bar-prev, .yt-uix-button-icon-playlist-bar-next, .yt-uix-button-icon-playlist-bar-close, #watch7-playlist-tray-trim, .pl-header-details li:nth-of-type(1) .run.run-text, #c4-about-tab .about-network-links, .playlist-created.el-embedded .ytp-button-playlist, html[data-player-size=fullscreen] .playlist-created .ytp-button-playlist, .ytp-button-playlist-text, .ytp-playlist-tray-index-length, .html5-video-player .captions-asr .caption-window-transform:after, .html5-video-player .captions-asr .caption-window-transform:before {
         display: none !important }
 
     .yt-uix-button-subscribe-unbranded, .yt-uix-button-subscribe-unbranded[disabled], .yt-uix-button-subscribe-unbranded[disabled]:hover, .yt-uix-button-subscribe-unbranded[disabled]:active, .yt-uix-button-subscribed-unbranded, .yt-uix-button-subscribe-unbranded[disabled]:focus {
@@ -267,7 +267,7 @@ opacity:1}
 [exp-modern-playlists] #watch7-playlist-tray .video-list-item .count {
     text-align: left;padding-left: 5px;}
     
-[exp-modern-playlists] #watch7-playlist-tray .playlist-bar-item-playing .count {
+[exp-modern-playlists] #watch7-playlist-tray .playlist-bar-item-playing .count{
     & when (@RedColor = Ringo) {
     color:#f00 !important; }
     & when (@RedColor = Ringo2) {
@@ -457,6 +457,24 @@ body #footer-container {
     background: #434343;
     -webkit-box-shadow: inset 0 0 1px #434343;
 }
+    
+.cardified-page .v3:not([wl^="w7"]) .yt-card #watch7-creator-bar {
+    margin-top: 10px !important;}
+    
+.ytp-volume-control-hover .ytp-volume-panel, .ytp-volume-slider {
+    width:64px !important;
+}
+
+.ytp-volume-slider-foreground {
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    background: #fff;
+}
+    
+.ytp-volume-slider-foreground:after {
+    left: 14px;
+}
 /* dark mode specific */
     .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded, .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded[disabled], .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded[disabled]:hover, .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded[disabled]:active, .exp-new-subscribe-style .yt-uix-button-subscribe-unbranded[disabled]:focus {
     & when (@DarkMode = 1) {
@@ -480,7 +498,7 @@ body #footer-container {
     & when (@DarkMode = 1) {
     color: #939393;
     }}
-.yt-uix-button-icon-c4-grid-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow, .yt-uix-button-icon-c4-list-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow, .yt-uix-button-icon-play-all, .watch8-menuitem::before, #watch8-close .watch8-action-panel-dismiss, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .st-gear span, .pl-header .yt-uix-button-icon-gear, .pl-header .yt-uix-button-icon-playlist-share, #watch7-subscription-container .channel-settings-link .yt-uix-button-icon-settings, [wl^="w8"] .st-floater-icon, .checkbox-on-off > label:after, .yt-uix-button-icon-c4-editor-edit, .oz-notification-dismiss, .oz-comment_post-dismiss, .oz-widget-dismiss, .st-panel-close .st-icon, .distiller_streamcontent.feed .post .distiller_yt-post-content > a:first-child:after {
+.yt-uix-button-icon-c4-grid-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-grid-flow, .yt-uix-button-icon-c4-list-flow, .yt-uix-button-toggled .yt-uix-button-icon-c4-list-flow, .yt-uix-button-icon-play-all, .watch8-menuitem::before, #watch8-close .watch8-action-panel-dismiss, .hitchhiker-enabled .addto-watch-later-button img, .hitchhiker-enabled .addto-watch-later-button-sign-in img, .st-gear span, .pl-header .yt-uix-button-icon-gear, .pl-header .yt-uix-button-icon-playlist-share, #watch7-subscription-container .channel-settings-link .yt-uix-button-icon-settings, [wl^="w8"] .st-floater-icon, .checkbox-on-off > label:after, .yt-uix-button-icon-c4-editor-edit, .oz-notification-dismiss, .oz-comment_post-dismiss, .oz-widget-dismiss, .st-panel-close .st-icon, .distiller_streamcontent.feed .post .distiller_yt-post-content > a:first-child:after, .pl-header .yt-uix-button-icon-playlist-like {
     & when (@DarkMode = 1) {
     filter: invert(1) !important;
     }}
@@ -570,7 +588,7 @@ body #footer-container {
     border-bottom: 1px solid #474747;
     }}
 
-#st-settings-button, .distiller_streamcontent.feed .distiller_yt-thread_user-content {
+#st-settings-button, .distiller_streamcontent.feed .distiller_yt-thread_user-content, .distiller_yt-thread .author .donation, [modern-styles] #watch-discussion .distiller_yt_instance .reply-button.focus_caller {
     & when (@DarkMode = 1) {
     color: #aaa;
     }}
